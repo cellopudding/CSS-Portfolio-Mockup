@@ -1,82 +1,86 @@
-
-body {
-    margin: 0;
-    background: darkgrey;
-    font-family: 'helvetica', sans serif;
-    font-weight: 300;
-    
-}
-
-h2 {
-    font-family: cursive;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header {
-    background: lightblue;
-}
-
-header::after {
-    content: '';
-    display: table;
-    clear: both;
-
-}
-
-.logo {
-    float: left;
-    height: 100px;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
+*{
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border box;
+}
+.headings{
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin: 40px 0px;
 }
 
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-}
 
-main {
+
+/*NAVBAR*/
+.navbar{
     display: flex;
-    flex-wrap: wrap;
-  }
-  
-  aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px;
-  }
-  
-  section {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px;
-  }
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .51);
+    position: sticky;
+    top: 0;
+}
 
-
-  footer {
+.navbar ul{
     display: flex;
-    flex-wrap: wrap;
-  }
-
-  footer ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
+    margin: 20px 0px;
 }
 
-footer li {
-    display: inline-block;
-    margin-left: 70px;
+.navbar ul li{
+    font-family: century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px 25px;
+    /*transition: all .5s ease;*/
+}
+
+.navbar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+/*play with box shadow here*/
+}
+
+/*ABOUT ME SECTION*/
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 500px;
+    height: 300px;
+}
+
+#bio{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#bio h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
